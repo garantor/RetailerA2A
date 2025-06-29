@@ -188,9 +188,8 @@ PAYMENT_CONFIG = {
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🆘 Support
-
-- **Documentation**: Check our [Wiki](https://github.com/yourusername/agentic-store/wiki)
-- **Issues**: Report bugs on [GitHub Issues](https://github.com/yourusername/agentic-store/issues)
+- **Documentation**: Check our [Wiki](https://github.com/garantor/RetailerA2A/wiki)
+- **Issues**: Report bugs on [GitHub Issues](https://github.com/garantor/RetailerA2A/issues)
 - **Discord**: Join our [Community Discord](https://discord.gg/agentic-store)
 
 ## 🚀 Roadmap
