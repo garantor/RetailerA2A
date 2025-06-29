@@ -12,6 +12,7 @@ from google.adk.memory.in_memory_memory_service import InMemoryMemoryService
 from google.adk.runners import Runner
 from google.adk.sessions import InMemorySessionService
 from google.genai import types
+from agent import conversation_memory
 
 
 class RetailerAgentExecutor(AgentExecutor):
@@ -64,6 +65,9 @@ class RetailerAgentExecutor(AgentExecutor):
         else:
             user_id = "a2a_user"
 
+        # Get or create persistent session for this user
+        session_id = conversation_memory.get_or_create_session_for_user(user_id, task.contextId)
+
         try:
             # Update status with custom message
             await updater.update_status(
@@ -76,11 +80,14 @@ class RetailerAgentExecutor(AgentExecutor):
                 app_name=self.agent.name,
                 user_id=user_id,
                 state={},
-                session_id=task.contextId,
+                session_id=session_id,
             )
 
+            # Enhance the query with user and session context for memory-aware processing
+            enhanced_query = f"[User ID: {user_id}] [Session ID: {session_id}] [Context ID: {task.contextId}] {query}"
+            
             content = types.Content(
-                role="user", parts=[types.Part.from_text(text=query)]
+                role="user", parts=[types.Part.from_text(text=enhanced_query)]
             )
 
             response_text = ""
@@ -95,6 +102,14 @@ class RetailerAgentExecutor(AgentExecutor):
                             # Log or handle function calls if needed
                             pass  # Function calls are handled internally by ADK
 
+            # Update conversation memory with this interaction using persistent session
+            conversation_memory.update_session_memory(
+                session_id,
+                query,
+                response_text,
+                {"user_id": user_id, "task_id": task.id, "context_id": task.contextId}
+            )
+
             # Add response as artifact with custom name
             await updater.add_artifact(
                 [Part(root=TextPart(text=response_text))],
@@ -104,8 +119,18 @@ class RetailerAgentExecutor(AgentExecutor):
             await updater.complete()
 
         except Exception as e:
+            error_message = f"Error: {e!s}"
+            
+            # Also save error to memory for context
+            conversation_memory.update_session_memory(
+                session_id,
+                query,
+                error_message,
+                {"error": True, "user_id": user_id, "task_id": task.id, "context_id": task.contextId}
+            )
+            
             await updater.update_status(
                 TaskState.failed,
-                new_agent_text_message(f"Error: {e!s}", task.contextId, task.id),
+                new_agent_text_message(error_message, task.contextId, task.id),
                 final=True,
             )
