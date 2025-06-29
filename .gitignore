@@ -1,0 +1,14 @@
+
+
+
+
+lib/
+pyvenv.cfg
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+bin/
+include/
+lib64/
+.env
