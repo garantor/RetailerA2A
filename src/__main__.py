@@ -1,6 +1,4 @@
-
 # __ main.py usually contains the main entry point agent.
-
 
 import uvicorn
 
@@ -16,67 +14,68 @@ from a2a.types import (
 from dotenv import load_dotenv
 load_dotenv()
 
-
 from agent_executor import (
     RetailerAgentExecutor,
 )
 
-from agent import  Retailer_Root_Agent
+from agent import Retailer_Root_Agent
 
 if __name__ == '__main__':
-    # --8<-- [start:AgentSkill]
-    skill = AgentSkill(
-        id='Retailer_Agent',
-        name='get_inventory',
-        description='This is a simple retialer agent that return the list of inventory items, they have in stock.',
-        tags=['Retailer', 'Inventory', 'Store'],
-        # examples=['hi', 'hello world'],
+    # Skills for the retailer agent
+    inventory_skill = AgentSkill(
+        id='inventory_management',
+        name='Inventory Management',
+        description='Check inventory, search for products, and view stock levels for electronics store.',
+        tags=['inventory', 'products', 'stock', 'electronics'],
+        examples=['show me inventory', 'search for headphones', 'what products do you have'],
     )
-    # --8<-- [end:AgentSkill]
+    
+    payment_skill = AgentSkill(
+        id='usdc_payment_processing',
+        name='USDC Payment Processing',
+        description='Handle USDC cryptocurrency payments on Ethereum, Polygon, and Arbitrum networks. Provide wallet addresses and verify transactions.',
+        tags=['payment', 'USDC', 'blockchain', 'cryptocurrency', 'ethereum', 'polygon', 'arbitrum'],
+        examples=['how can I pay?', 'payment info for polygon', 'verify my transaction', 'supported payment methods'],
+    )
+    
+    memory_skill = AgentSkill(
+        id='conversation_memory',
+        name='Conversation Memory',
+        description='Remember customer preferences, previous conversations, and maintain session continuity across interactions.',
+        tags=['memory', 'preferences', 'history', 'personalization'],
+        examples=['what did we discuss before?', 'remember my preferences', 'show conversation history'],
+    )
 
-    # extended_skill = AgentSkill(
-    #     id='super_hello_world',
-    #     name='Returns a SUPER Hello World',
-    #     description='A more enthusiastic greeting, only for authenticated users.',
-    #     tags=['hello world', 'super', 'extended'],
-    #     examples=['super hi', 'give me a super hello'],
-    # )
-
-    # --8<-- [start:AgentCard]
-    # This will be the public-facing agent card
+    # Public agent card
     public_agent_card = AgentCard(
-        name='Agentic Store',
-        description='A simple agent that returns a list of inventory items.',
+        name='Crypto Electronics Retailer',
+        description='An intelligent electronics retail agent that manages inventory, processes USDC payments on multiple blockchain networks, and remembers your preferences across conversations.',
         url='http://localhost:9999/',
         version='1.0.0',
         defaultInputModes=['text'],
         defaultOutputModes=['text'],
         capabilities=AgentCapabilities(streaming=True),
-        skills=[skill],  # Only the basic skill for the public card
+        skills=[inventory_skill, payment_skill],  # Basic skills for public
         supportsAuthenticatedExtendedCard=True,
     )
-    # --8<-- [end:AgentCard]
 
-    # This will be the authenticated extended agent card
-    # It includes the additional 'extended_skill'
+    # Extended agent card with full capabilities
     specific_extended_agent_card = public_agent_card.model_copy(
         update={
-            'name': 'Hello World Agent - Extended Edition',  # Different name for clarity
-            'description': 'The full-featured hello world agent for authenticated users.',
-            'version': '1.0.1',  # Could even be a different version
-            # Capabilities and other fields like url, defaultInputModes, defaultOutputModes,
-            # supportsAuthenticatedExtendedCard are inherited from public_agent_card unless specified here.
+            'name': 'Crypto Electronics Retailer - Premium',
+            'description': 'Full-featured electronics retail agent with advanced memory capabilities, comprehensive USDC payment processing, and personalized shopping experience.',
+            'version': '1.1.0',
             'skills': [
-                skill,
-                # extended_skill,
-            ],  # Both skills for the extended card
+                inventory_skill,
+                payment_skill,
+                memory_skill,  # Extended memory features
+            ],
         }
     )
 
     request_handler = DefaultRequestHandler(
         agent_executor=RetailerAgentExecutor(
-            agent= Retailer_Root_Agent,
-
+            agent=Retailer_Root_Agent,
         ),
         task_store=InMemoryTaskStore(),
     )
