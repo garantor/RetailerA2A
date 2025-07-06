@@ -12,7 +12,7 @@ from google.adk.memory.in_memory_memory_service import InMemoryMemoryService
 from google.adk.runners import Runner
 from google.adk.sessions import InMemorySessionService
 from google.genai import types
-from agent import conversation_memory
+from Tools.memory import conversation_memory
 
 
 class RetailerAgentExecutor(AgentExecutor):

@@ -1,735 +1,542 @@
 {
-  "d5e71603-8ac5-467b-a0a9-43836d89f0cd": {
+  "e19dbfe1-3bab-44e2-8606-d65aaf54fa68": {
     "conversation_history": [
       {
-        "timestamp": "2025-06-29T21:57:24.362929",
+        "timestamp": "2025-07-06T05:19:59.811165",
+        "user_query": "search_product: PowerFlow USB-C Charging Cable",
+        "agent_response": "\ud83d\udd0d **Found 1 product(s) matching 'PowerFlow USB-C Charging Cable':**\n\n\u2022 **PowerFlow USB-C Charging Cable** - $1.99 (Stock: 100)\n",
+        "context": {
+          "action": "product_search",
+          "search_term": "PowerFlow USB-C Charging Cable",
+          "results_found": 1
+        }
+      },
+      {
+        "timestamp": "2025-07-06T05:19:59.811923",
+        "user_query": "search_by_price_range: $0-$500",
+        "agent_response": "\ud83d\udcb0 **Products in price range $0.00 - $500.00 (10 items):**\n\n\u2022 **PowerFlow USB-C Charging Cable** - $1.99 (Stock: 100)\n  Category: Cables & Adapters\n\u2022 **ShieldMax Tempered Glass Screen Protector** - $9.99 (Stock: 75)\n  Category: Mobile Accessories\n\u2022 **GripMount Pro Car Phone Mount** - $19.99 (Stock: 35)\n  Category: Mobile Accessories\n\u2022 **TechGuard Pro iPhone Case** - $24.99 (Stock: 50)\n  Category: Mobile Accessories\n\u2022 **ClickPro Wireless Mouse** - $29.99 (Stock: 40)\n  Category: Computer Accessories\n\u2022 **PowerVault Portable Power Bank 10000mAh** - $34.99 (Stock: 30)\n  Category: Power & Charging\n\u2022 **ErgoDesk Aluminum Laptop Stand** - $45.99 (Stock: 20)\n  Category: Computer Accessories\n\u2022 **BoomBox Elite Bluetooth Speaker** - $59.99 (Stock: 15)\n  Category: Audio\n\u2022 **SonicWave Pro Wireless Bluetooth Headphones** - $79.99 (Stock: 25)\n  Category: Audio\n\u2022 **GameMaster RGB Gaming Keyboard** - $89.99 (Stock: 12)\n  Category: Gaming\n",
+        "context": {
+          "action": "price_search",
+          "min_price": 0,
+          "max_price": 500,
+          "results_found": 10
+        }
+      },
+      {
+        "timestamp": "2025-07-06T05:20:00.360275",
+        "user_query": "I want to buy PowerFlow USB-C Charging Cable. Do you have it in stock? My budget is $500.",
+        "agent_response": "Yes, the PowerFlow USB-C Charging Cable is in stock for $1.99. It fits within your $500 budget. Would you like to proceed with the purchase or are you interested in any other products?\n",
+        "context": {
+          "user_id": "",
+          "task_id": "dad27220-1b58-4cbe-a857-a70860aebf30",
+          "context_id": "e19dbfe1-3bab-44e2-8606-d65aaf54fa68"
+        }
+      },
+      {
+        "timestamp": "2025-07-06T05:20:12.922288",
+        "user_query": "Great! I'll take the PowerFlow USB-C Charging Cable for $1.99. Please provide your Sepolia USDT wallet address for payment.",
+        "agent_response": "Error: name 'datetime' is not defined",
+        "context": {
+          "error": true,
+          "user_id": "",
+          "task_id": "adef25a0-6112-4303-8d75-52f723409614",
+          "context_id": "c400dc11-9e8f-42c4-b0bb-a810bb088a06"
+        }
+      },
+      {
+        "timestamp": "2025-07-06T05:20:20.498640",
+        "user_query": "search_product: PowerFlow USB-C Charging Cable",
+        "agent_response": "\ud83d\udd0d **Found 1 product(s) matching 'PowerFlow USB-C Charging Cable':**\n\n\u2022 **PowerFlow USB-C Charging Cable** - $1.99 (Stock: 100)\n",
+        "context": {
+          "action": "product_search",
+          "search_term": "PowerFlow USB-C Charging Cable",
+          "results_found": 1
+        }
+      },
+      {
+        "timestamp": "2025-07-06T05:20:20.948343",
+        "user_query": "I specifically need PowerFlow USB-C Charging Cable. Do you have this exact product?",
+        "agent_response": "Yes, we have the PowerFlow USB-C Charging Cable in stock. It is priced at $1.99 and we have 100 units available.\n",
+        "context": {
+          "user_id": "",
+          "task_id": "7c9f92cf-7ee1-402f-8f9e-d322528e8012",
+          "context_id": "81e79a7e-f87e-4f5a-bc18-58850f49fd3b"
+        }
+      }
+    ],
+    "user_preferences": {},
+    "past_searches": [
+      {
+        "timestamp": "2025-07-06T05:19:59.809942",
+        "search_term": "PowerFlow USB-C Charging Cable",
+        "results_count": 1
+      },
+      {
+        "timestamp": "2025-07-06T05:20:20.497944",
+        "search_term": "PowerFlow USB-C Charging Cable",
+        "results_count": 1
+      }
+    ],
+    "payment_requests": [],
+    "created_at": "2025-07-06T05:19:59.809914"
+  },
+  "cf2b8f78-38af-4f3a-bd3d-b1cb5b18e68c": {
+    "conversation_history": [
+      {
+        "timestamp": "2025-07-06T05:25:44.508904",
         "user_query": "check_inventory",
-        "agent_response": "\ud83d\udce6 **Current Inventory:**\n\n\u2022 **Wireless Bluetooth Headphones** - $79.99 (Stock: 25)\n\u2022 **Smartphone Case (iPhone)** - $24.99 (Stock: 50)\n\u2022 **USB-C Charging Cable** - $12.99 (Stock: 100)\n\u2022 **Portable Power Bank 10000mAh** - $34.99 (Stock: 30)\n\u2022 **Bluetooth Speaker** - $59.99 (Stock: 15)\n\u2022 **Laptop Stand** - $45.99 (Stock: 20)\n\u2022 **Wireless Mouse** - $29.99 (Stock: 40)\n\u2022 **Screen Protector** - $9.99 (Stock: 75)\n\u2022 **Car Phone Mount** - $19.99 (Stock: 35)\n\u2022 **Gaming Keyboard** - $89.99 (Stock: 12)\n",
+        "agent_response": "\ud83d\udce6 **Current Inventory:**\n\n\u2022 **SonicWave Pro Wireless Bluetooth Headphones** - $79.99 (Stock: 25)\n\u2022 **TechGuard Pro iPhone Case** - $24.99 (Stock: 50)\n\u2022 **PowerFlow USB-C Charging Cable** - $1.99 (Stock: 100)\n\u2022 **PowerVault Portable Power Bank 10000mAh** - $34.99 (Stock: 30)\n\u2022 **BoomBox Elite Bluetooth Speaker** - $59.99 (Stock: 15)\n\u2022 **ErgoDesk Aluminum Laptop Stand** - $45.99 (Stock: 20)\n\u2022 **ClickPro Wireless Mouse** - $29.99 (Stock: 40)\n\u2022 **ShieldMax Tempered Glass Screen Protector** - $9.99 (Stock: 75)\n\u2022 **GripMount Pro Car Phone Mount** - $19.99 (Stock: 35)\n\u2022 **GameMaster RGB Gaming Keyboard** - $89.99 (Stock: 12)\n",
         "context": {
           "action": "inventory_check",
           "items_count": 10
         }
       },
       {
-        "timestamp": "2025-06-29T21:57:24.726256",
-        "user_query": "hello",
-        "agent_response": "Hello! How can I help you today? \n\n",
-        "context": {
-          "user_id": "",
-          "task_id": "7405606a-42d3-4a67-a953-cfbe4d0d9349"
-        }
-      }
-    ],
-    "user_preferences": {},
-    "past_searches": [],
-    "created_at": "2025-06-29T21:57:24.362921"
-  },
-  "edc0de76-205c-452f-92d4-54d3e24f0abd": {
-    "conversation_history": [
-      {
-        "timestamp": "2025-06-29T21:57:40.654916",
-        "user_query": "what's my last message",
-        "agent_response": "Hello! How can I help you today?\n",
-        "context": {
-          "user_id": "",
-          "task_id": "242b3240-6d31-4dbe-8bbd-28e78e3df5bb"
-        }
-      }
-    ],
-    "user_preferences": {},
-    "past_searches": [],
-    "created_at": "2025-06-29T21:57:40.654892"
-  },
-  "b887f928-6f3f-4285-babf-49377d1ed5d8": {
-    "conversation_history": [
-      {
-        "timestamp": "2025-06-29T22:00:07.358320",
-        "user_query": "hello",
-        "agent_response": "Hello! How can I help you today?\n",
-        "context": {
-          "user_id": "",
-          "task_id": "28463170-57c7-43b9-bd41-f4ec38a760b9"
-        }
-      }
-    ],
-    "user_preferences": {},
-    "past_searches": [],
-    "created_at": "2025-06-29T22:00:07.358297"
-  },
-  "5d25b0a8-16e7-422f-9b53-92332aea9f78": {
-    "conversation_history": [
-      {
-        "timestamp": "2025-06-29T22:00:26.333199",
-        "user_query": "what's my last message ?",
-        "agent_response": "Hello! How can I help you today?\n",
-        "context": {
-          "user_id": "",
-          "task_id": "6fe3f3a4-fbd7-43d4-aa02-d37eb6a8b813"
-        }
-      }
-    ],
-    "user_preferences": {},
-    "past_searches": [],
-    "created_at": "2025-06-29T22:00:26.333177"
-  },
-  "1b13bafd-d796-4100-b87c-4a93f6c122b1": {
-    "conversation_history": [
-      {
-        "timestamp": "2025-06-29T22:01:16.366470",
-        "user_query": "hello",
-        "agent_response": "Hello! How can I help you today?\n",
-        "context": {
-          "user_id": "",
-          "task_id": "7e583b01-526c-4247-aeb4-3edd78825086"
-        }
-      }
-    ],
-    "user_preferences": {},
-    "past_searches": [],
-    "created_at": "2025-06-29T22:01:16.366436"
-  },
-  "618f1fd2-e1be-4c00-adc2-6d3e8651efe0": {
-    "conversation_history": [
-      {
-        "timestamp": "2025-06-29T22:01:32.681956",
-        "user_query": "what's my last message ?",
-        "agent_response": "New conversation started. How can I help you today?\n",
-        "context": {
-          "user_id": "",
-          "task_id": "35523ae2-10b2-4cdb-923f-f75e82137bb0"
-        }
-      }
-    ],
-    "user_preferences": {},
-    "past_searches": [],
-    "created_at": "2025-06-29T22:01:32.681931"
-  },
-  "f3010d6d-d490-466f-bed5-9472d113ee8e": {
-    "conversation_history": [
-      {
-        "timestamp": "2025-06-29T22:02:00.255321",
-        "user_query": "check_inventory",
-        "agent_response": "\ud83d\udce6 **Current Inventory:**\n\n\u2022 **Wireless Bluetooth Headphones** - $79.99 (Stock: 25)\n\u2022 **Smartphone Case (iPhone)** - $24.99 (Stock: 50)\n\u2022 **USB-C Charging Cable** - $12.99 (Stock: 100)\n\u2022 **Portable Power Bank 10000mAh** - $34.99 (Stock: 30)\n\u2022 **Bluetooth Speaker** - $59.99 (Stock: 15)\n\u2022 **Laptop Stand** - $45.99 (Stock: 20)\n\u2022 **Wireless Mouse** - $29.99 (Stock: 40)\n\u2022 **Screen Protector** - $9.99 (Stock: 75)\n\u2022 **Car Phone Mount** - $19.99 (Stock: 35)\n\u2022 **Gaming Keyboard** - $89.99 (Stock: 12)\n",
-        "context": {
-          "action": "inventory_check",
-          "items_count": 10
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:02:00.928586",
+        "timestamp": "2025-07-06T05:25:45.090861",
         "user_query": "what are the list of items you have ?",
-        "agent_response": "I have a variety of electronics in stock! Here's a list of what's currently available:\n\n*   **Wireless Bluetooth Headphones** - $79.99 (25 in stock)\n*   **Smartphone Case (iPhone)** - $24.99 (50 in stock)\n*   **USB-C Charging Cable** - $12.99 (100 in stock)\n*   **Portable Power Bank 10000mAh** - $34.99 (30 in stock)\n*   **Bluetooth Speaker** - $59.99 (15 in stock)\n*   **Laptop Stand** - $45.99 (20 in stock)\n*   **Wireless Mouse** - $29.99 (40 in stock)\n*   **Screen Protector** - $9.99 (75 in stock)\n*   **Car Phone Mount** - $19.99 (35 in stock)\n*   **Gaming Keyboard** - $89.99 (12 in stock)\n\nDo any of these catch your eye, or are you looking for something specific?\n",
+        "agent_response": "I have a variety of items including headphones, phone cases, charging cables, power banks, Bluetooth speakers, laptop stands, wireless mice, screen protectors, car phone mounts, and gaming keyboards. Let me know if any of these catch your eye!\n",
         "context": {
           "user_id": "",
-          "task_id": "a57f3e04-57ab-419a-8c52-dc16e522e3dc"
-        }
-      }
-    ],
-    "user_preferences": {},
-    "past_searches": [],
-    "created_at": "2025-06-29T22:02:00.255299"
-  },
-  "144bcc17-d7d4-4c63-94eb-474b2dfa2e9b": {
-    "conversation_history": [
-      {
-        "timestamp": "2025-06-29T22:02:27.708016",
-        "user_query": "search_product: laptop stand",
-        "agent_response": "\ud83d\udd0d **Found 1 product(s) matching 'laptop stand':**\n\n\u2022 **Laptop Stand** - $45.99 (Stock: 20)\n",
-        "context": {
-          "action": "product_search",
-          "search_term": "laptop stand",
-          "results_found": 1
+          "task_id": "098e293f-7817-4b5c-80fc-5830e8b0bbc1",
+          "context_id": "cf2b8f78-38af-4f3a-bd3d-b1cb5b18e68c"
         }
       },
       {
-        "timestamp": "2025-06-29T22:02:27.999617",
-        "user_query": "what's the last price for the laptop stand ?",
-        "agent_response": "The last price for the laptop stand is $45.99. There are 20 in stock.\n",
-        "context": {
-          "user_id": "",
-          "task_id": "ced4bf97-7e35-4376-804f-108f69e9a19b"
-        }
-      }
-    ],
-    "user_preferences": {},
-    "past_searches": [
-      {
-        "timestamp": "2025-06-29T22:02:27.706034",
-        "search_term": "laptop stand",
-        "results_count": 1
-      }
-    ],
-    "created_at": "2025-06-29T22:02:27.705993"
-  },
-  "a8c50c82-5d18-4e9f-9d01-ac1dad8c2a4e": {
-    "conversation_history": [
-      {
-        "timestamp": "2025-06-29T22:02:37.969958",
-        "user_query": "Bye",
-        "agent_response": "Goodbye! If you need anything else, feel free to ask.\n",
-        "context": {
-          "user_id": "",
-          "task_id": "82cdd065-7c96-4bd4-9123-7ef181b33ad4"
-        }
-      }
-    ],
-    "user_preferences": {
-      "last_interaction": "bye"
-    },
-    "past_searches": [],
-    "created_at": "2025-06-29T22:02:37.667710"
-  },
-  "5b8a7ba2-83c3-4885-9df1-5a331b6689b7": {
-    "conversation_history": [
-      {
-        "timestamp": "2025-06-29T22:02:53.107919",
-        "user_query": "Where did i stop ?",
-        "agent_response": "New conversation started. How can I help you today?\n",
-        "context": {
-          "user_id": "",
-          "task_id": "5198c0b2-af3b-4948-b189-28cf00720296"
-        }
-      }
-    ],
-    "user_preferences": {},
-    "past_searches": [],
-    "created_at": "2025-06-29T22:02:53.107892"
-  },
-  "9ce55bb3-90a8-4947-90ef-918531c69d88": {
-    "conversation_history": [
-      {
-        "timestamp": "2025-06-29T22:20:57.951795",
-        "user_query": "[User: buyer_1751231403_ad314a73] how do i pay for goods bout",
-        "agent_response": "I can't directly process payments. You'll need to complete the payment through the checkout process on the website. Is there anything else I can help you with, perhaps checking product availability or searching for specific items?\n",
-        "context": {
-          "user_id": "",
-          "task_id": "7e61942b-1494-429d-b2bf-29a8ffd25437",
-          "context_id": "8f85d623-2b06-4809-b0cb-7a2c4bd60112"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:21:17.671374",
-        "user_query": "[User: buyer_1751231403_ad314a73] bye",
-        "agent_response": "Goodbye! If you need anything else, feel free to ask.\n",
-        "context": {
-          "user_id": "",
-          "task_id": "d2bd00d2-0726-48cb-b923-cbba3a7daa03",
-          "context_id": "30ae93de-3ee0-403a-bd17-cc08d6bf0b38"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:23:20.107062",
-        "user_query": "[User: buyer_1751231403_ad314a73] hello",
-        "agent_response": "Hello! It's great to see you again. How can I help you today? Are you looking for anything in particular, or would you like to hear about our latest arrivals?\n",
-        "context": {
-          "user_id": "",
-          "task_id": "888cd87f-8339-42fb-bcc6-48bd4b7c14a0",
-          "context_id": "a5580256-f354-4cbb-981e-c4bb457fb6b1"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:24:36.873335",
-        "user_query": "[User: buyer_1751231403_ad314a73] hello",
-        "agent_response": "Hello! It's good to hear from you again. How can I help you today?\n",
-        "context": {
-          "user_id": "",
-          "task_id": "b6b8faa5-205b-4ce0-86cf-a2a21dff1424",
-          "context_id": "0eca3e2a-20ed-4fcb-b1be-a6011267a18f"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:25:37.951762",
-        "user_query": "[User: buyer_1751231403_ad314a73] hello",
-        "agent_response": "Hello! It's good to hear from you again. How can I help you today?\n",
-        "context": {
-          "user_id": "",
-          "task_id": "3defba29-af0a-4af0-a1f7-b4256940875f",
-          "context_id": "c987fd6c-7804-490a-a99e-09e9d734d9fb"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:25:48.020566",
-        "user_query": "[User: buyer_1751231403_ad314a73] I am doing fine",
-        "agent_response": "Thanks for confirming. I see that in our previous conversation, you were looking for a laptop and an iPhone. Is there anything specific you're looking for today, or would you like to explore our current inventory?\n",
-        "context": {
-          "user_id": "",
-          "task_id": "b355b183-d769-4a1e-9038-d700e72ef25a",
-          "context_id": "31555b7e-8723-4b6f-8132-f4e7df8b9e0f"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:26:10.688922",
+        "timestamp": "2025-07-06T05:27:02.957285",
         "user_query": "check_inventory",
-        "agent_response": "\ud83d\udce6 **Current Inventory:**\n\n\u2022 **Wireless Bluetooth Headphones** - $79.99 (Stock: 25)\n\u2022 **Smartphone Case (iPhone)** - $24.99 (Stock: 50)\n\u2022 **USB-C Charging Cable** - $12.99 (Stock: 100)\n\u2022 **Portable Power Bank 10000mAh** - $34.99 (Stock: 30)\n\u2022 **Bluetooth Speaker** - $59.99 (Stock: 15)\n\u2022 **Laptop Stand** - $45.99 (Stock: 20)\n\u2022 **Wireless Mouse** - $29.99 (Stock: 40)\n\u2022 **Screen Protector** - $9.99 (Stock: 75)\n\u2022 **Car Phone Mount** - $19.99 (Stock: 35)\n\u2022 **Gaming Keyboard** - $89.99 (Stock: 12)\n",
+        "agent_response": "\ud83d\udce6 **Current Inventory:**\n\n\u2022 **SonicWave Pro Wireless Bluetooth Headphones** - $79.99 (Stock: 25)\n\u2022 **TechGuard Pro iPhone Case** - $24.99 (Stock: 50)\n\u2022 **PowerFlow USB-C Charging Cable** - $1.99 (Stock: 100)\n\u2022 **PowerVault Portable Power Bank 10000mAh** - $34.99 (Stock: 30)\n\u2022 **BoomBox Elite Bluetooth Speaker** - $59.99 (Stock: 15)\n\u2022 **ErgoDesk Aluminum Laptop Stand** - $45.99 (Stock: 20)\n\u2022 **ClickPro Wireless Mouse** - $29.99 (Stock: 40)\n\u2022 **ShieldMax Tempered Glass Screen Protector** - $9.99 (Stock: 75)\n\u2022 **GripMount Pro Car Phone Mount** - $19.99 (Stock: 35)\n\u2022 **GameMaster RGB Gaming Keyboard** - $89.99 (Stock: 12)\n",
         "context": {
           "action": "inventory_check",
           "items_count": 10
         }
       },
       {
-        "timestamp": "2025-06-29T22:26:11.383528",
-        "user_query": "[User: buyer_1751231403_ad314a73] show mw your current inventories ",
-        "agent_response": "Here's a look at our current inventory:\n\n*   **Wireless Bluetooth Headphones** - $79.99 (Stock: 25)\n*   **Smartphone Case (iPhone)** - $24.99 (Stock: 50)\n*   **USB-C Charging Cable** - $12.99 (Stock: 100)\n*   **Portable Power Bank 10000mAh** - $34.99 (Stock: 30)\n*   **Bluetooth Speaker** - $59.99 (Stock: 15)\n*   **Laptop Stand** - $45.99 (Stock: 20)\n*   **Wireless Mouse** - $29.99 (Stock: 40)\n*   **Screen Protector** - $9.99 (Stock: 75)\n*   **Car Phone Mount** - $19.99 (Stock: 35)\n*   **Gaming Keyboard** - $89.99 (Stock: 12)\n\nLet me know if anything catches your eye or if you're looking for something specific!\n",
+        "timestamp": "2025-07-06T05:27:03.809394",
+        "user_query": "what products do you have?",
+        "agent_response": "I have a variety of electronics in stock! Here's a list of our current inventory:\n\n*   **SonicWave Pro Wireless Bluetooth Headphones** - $79.99 (Stock: 25)\n*   **TechGuard Pro iPhone Case** - $24.99 (Stock: 50)\n*   **PowerFlow USB-C Charging Cable** - $1.99 (Stock: 100)\n*   **PowerVault Portable Power Bank 10000mAh** - $34.99 (Stock: 30)\n*   **BoomBox Elite Bluetooth Speaker** - $59.99 (Stock: 15)\n*   **ErgoDesk Aluminum Laptop Stand** - $45.99 (Stock: 20)\n*   **ClickPro Wireless Mouse** - $29.99 (Stock: 40)\n*   **ShieldMax Tempered Glass Screen Protector** - $9.99 (Stock: 75)\n*   **GripMount Pro Car Phone Mount** - $19.99 (Stock: 35)\n*   **GameMaster RGB Gaming Keyboard** - $89.99 (Stock: 12)\n\nLet me know if anything catches your eye or if you're looking for something specific!\n",
         "context": {
           "user_id": "",
-          "task_id": "3e411a0e-b40d-4fee-aceb-35324d707903",
-          "context_id": "b0ef92d3-bb9b-44e4-9faa-aaafed4ed108"
+          "task_id": "e8ee20c6-e5d1-4b2b-bf91-11420e4d547a",
+          "context_id": "bf78b324-6091-4cc8-8f68-0a8e3831f5fd"
         }
       },
       {
-        "timestamp": "2025-06-29T22:26:27.943692",
-        "user_query": "search_product: iPhone",
-        "agent_response": "\ud83d\udd0d **Found 1 product(s) matching 'iPhone':**\n\n\u2022 **Smartphone Case (iPhone)** - $24.99 (Stock: 50)\n",
+        "timestamp": "2025-07-06T05:27:38.290354",
+        "user_query": "search_product: PowerFlow USB-C Charging Cable",
+        "agent_response": "\ud83d\udd0d **Found 1 product(s) matching 'PowerFlow USB-C Charging Cable':**\n\n\u2022 **PowerFlow USB-C Charging Cable** - $1.99 (Stock: 100)\n",
         "context": {
           "action": "product_search",
-          "search_term": "iPhone",
+          "search_term": "PowerFlow USB-C Charging Cable",
           "results_found": 1
         }
       },
       {
-        "timestamp": "2025-06-29T22:26:28.457798",
-        "user_query": "[User: buyer_1751231403_ad314a73] you don't have an iPhone yet ?",
-        "agent_response": "I see that you've previously searched for iPhones. However, it looks like we only have a \"Smartphone Case (iPhone)\" in stock right now. Would you like to check for other iPhone models or accessories?\n",
+        "timestamp": "2025-07-06T05:27:38.891755",
+        "user_query": "I want to buy PowerFlow USB-C Charging Cable. Do you have it in stock? My budget is $500?",
+        "agent_response": "Yes, we have the PowerFlow USB-C Charging Cable in stock for $1.99. It appears to be well within your budget of $500. Would you like to proceed with the purchase or explore other options?\n",
         "context": {
           "user_id": "",
-          "task_id": "b9d1a0ff-b7e6-43be-ab66-668992121ca4",
-          "context_id": "2a5eda41-ef7a-4c04-bc63-fffc1e5db2f6"
+          "task_id": "eb84113b-bc98-47ec-9474-929993bc4f6f",
+          "context_id": "3d7002ce-ba37-424a-aa99-f137522716fc"
         }
       },
       {
-        "timestamp": "2025-06-29T22:26:46.344158",
-        "user_query": "[User: buyer_1751231403_ad314a73] yes, show me other models ",
-        "agent_response": "I see that you were looking for iPhones in our previous conversation. Would you like to see other models of iPhones, or would you prefer to look at a different product category?\n",
+        "timestamp": "2025-07-06T05:28:05.230232",
+        "user_query": "Great! I'll take the PowerFlow USB-C Charging Cable for $1.99. Please provide your Sepolia USDT wallet address for payment",
+        "agent_response": "Error: name 'datetime' is not defined",
         "context": {
+          "error": true,
           "user_id": "",
-          "task_id": "a6787f08-5368-4e81-b930-100e0047198d",
-          "context_id": "6393a8ca-d5c7-45e2-8cd3-c6f055632597"
+          "task_id": "5b3527e0-0e9a-4820-beae-fd368b396da4",
+          "context_id": "d9e505bd-6c9f-4be4-b215-6be3225b2290"
         }
       },
       {
-        "timestamp": "2025-06-29T22:32:24.776935",
-        "user_query": "[User: buyer_1751231403_ad314a73] hello",
-        "agent_response": "Hello! I'm the retailer agent. How can I help you today?\n",
+        "timestamp": "2025-07-06T05:29:12.238864",
+        "user_query": "Great! I'll take the PowerFlow USB-C Charging Cable for $1.99. Please provide your Sepolia USDT wallet address for payment",
+        "agent_response": "Error: name 'datetime' is not defined",
         "context": {
+          "error": true,
           "user_id": "",
-          "task_id": "57b5fa8c-3a42-4ad9-bc44-fbb0aa9661da",
-          "context_id": "8cba64ae-9e64-4f8d-b631-987e96880b6c"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:32:34.236160",
-        "user_query": "[User: buyer_1751231403_ad314a73] how can i pay ?",
-        "agent_response": "I can help you with that! How would you like to pay? We accept various payment methods.\n",
-        "context": {
-          "user_id": "",
-          "task_id": "9f5d7e56-51e4-4f03-8986-75923546cfa0",
-          "context_id": "5c6a4d54-b213-4dd7-b70b-b7fe7bef48d2"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:32:49.332193",
-        "user_query": "check_inventory",
-        "agent_response": "\ud83d\udce6 **Current Inventory:**\n\n\u2022 **Wireless Bluetooth Headphones** - $79.99 (Stock: 25)\n\u2022 **Smartphone Case (iPhone)** - $24.99 (Stock: 50)\n\u2022 **USB-C Charging Cable** - $12.99 (Stock: 100)\n\u2022 **Portable Power Bank 10000mAh** - $34.99 (Stock: 30)\n\u2022 **Bluetooth Speaker** - $59.99 (Stock: 15)\n\u2022 **Laptop Stand** - $45.99 (Stock: 20)\n\u2022 **Wireless Mouse** - $29.99 (Stock: 40)\n\u2022 **Screen Protector** - $9.99 (Stock: 75)\n\u2022 **Car Phone Mount** - $19.99 (Stock: 35)\n\u2022 **Gaming Keyboard** - $89.99 (Stock: 12)\n",
-        "context": {
-          "action": "inventory_check",
-          "items_count": 10
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:32:49.870951",
-        "user_query": "[User: buyer_1751231403_ad314a73] show me the methods you accept",
-        "agent_response": "I can help you with the following methods:\n- `check_inventory`: To see all available products.\n- `search_product`: To find a specific product.\n- `get_conversation_context`: To recall previous conversations and user preferences.\n- `save_user_preference`: To remember your preferences for future interactions.\n- `start_new_session`: To begin a fresh conversation.\n\nI see you last interacted with me when searching for 'iPhone'. Is there anything specific you're looking for today?\n",
-        "context": {
-          "user_id": "",
-          "task_id": "76c6dc49-bbd5-40f1-b07a-dab3bb9d6403",
-          "context_id": "f633b78c-7e1b-463f-8e9f-4e3030d17a94"
-        }
-      }
-    ],
-    "user_preferences": {
-      "last_interaction": "hello"
-    },
-    "past_searches": [
-      {
-        "timestamp": "2025-06-29T22:19:10.409720",
-        "search_term": "laptop",
-        "results_count": 1
-      },
-      {
-        "timestamp": "2025-06-29T22:20:11.812188",
-        "search_term": "mac laptop",
-        "results_count": 0
-      },
-      {
-        "timestamp": "2025-06-29T22:20:34.774322",
-        "search_term": "iPhone",
-        "results_count": 1
-      },
-      {
-        "timestamp": "2025-06-29T22:26:27.942215",
-        "search_term": "iPhone",
-        "results_count": 1
-      }
-    ],
-    "created_at": "2025-06-29T22:10:17.522264"
-  },
-  "eedf0069-d183-4407-bf6d-2823e739fc58": {
-    "conversation_history": [
-      {
-        "timestamp": "2025-06-29T22:33:23.367660",
-        "user_query": "[User: buyer_1751231403_ad314a73] hey",
-        "agent_response": "Hello! How can I help you today?\n",
-        "context": {
-          "user_id": "",
-          "task_id": "aa363460-dec9-46c5-a207-37b6d574e59a",
-          "context_id": "eedf0069-d183-4407-bf6d-2823e739fc58"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:33:29.777052",
-        "user_query": "get_supported_networks",
-        "agent_response": "\ud83c\udf10 **Supported Payment Networks:**\n\n**Ethereum** (ethereum)\n\u2022 Chain ID: 1\n\u2022 Network Fee: High\n\u2022 Confirmation Time: 15 minutes\n\n**Polygon (MATIC)** (polygon)\n\u2022 Chain ID: 137\n\u2022 Network Fee: Low\n\u2022 Confirmation Time: 2-5 minutes\n\n**Arbitrum One** (arbitrum)\n\u2022 Chain ID: 42161\n\u2022 Network Fee: Very Low\n\u2022 Confirmation Time: 1-2 minutes\n\n**\ud83d\udca1 Recommended:** Polygon (MATIC) (Low fees, fast confirmations)\n\n**\ud83d\udcdd To get payment address:** Ask for 'payment info' and specify the network\nExample: 'I want to pay with USDC on Polygon'\n",
-        "context": {
-          "action": "networks_info_request"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:33:29.783751",
-        "user_query": "get_payment_info: polygon",
-        "agent_response": "\ud83d\udcb3 **Payment Information - Polygon (MATIC)**\n\n**\ud83d\udcb0 Accepted Currency:** USDC only\n**\ud83d\udd17 Network:** Polygon (MATIC) (Chain ID: 137)\n**\ud83d\udccd Wallet Address:** `0x742e4c5b8f8de8a3d51b4e4a8d2f6e9c1a3b5d7e`\n**\ud83d\udcc4 USDC Contract:** `0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174`\n\n**\ud83d\udcca Network Details:**\n\u2022 Network Fee: Low\n\u2022 Confirmation Time: 2-5 minutes\n\u2022 Minimum Payment: $1.00 USDC\n\u2022 Payment Timeout: 30 minutes\n\n**\u26a0\ufe0f Important:**\n\u2022 Only send USDC tokens to this address\n\u2022 Ensure you're on the correct network (Polygon (MATIC))\n\u2022 Include your order reference in the transaction memo if possible\n\u2022 Double-check the wallet address before sending\n",
-        "context": {
-          "action": "payment_info_request",
-          "network": "polygon",
-          "wallet_provided": true
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:33:30.542927",
-        "user_query": "[User: buyer_1751231403_ad314a73] How can i pay ?",
-        "agent_response": "We accept USDC payments on the Ethereum, Polygon, and Arbitrum networks. I recommend using the Polygon network for lower fees and faster confirmations.\n\nHere is our payment information for the Polygon network:\n\n**Accepted Currency:** USDC only\n**Network:** Polygon (MATIC) (Chain ID: 137)\n**Wallet Address:** `0x742e4c5b8f8de8a3d51b4e4a8d2f6e9c1a3b5d7e`\n**USDC Contract:** `0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174`\n\nPlease ensure you are on the correct network and only send USDC to this address.\n",
-        "context": {
-          "user_id": "",
-          "task_id": "77594ffa-f8fd-40d1-8af9-ac034e5b97cf",
-          "context_id": "036a9c46-999e-4072-9c29-59db505b56ce"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:33:58.447688",
-        "user_query": "get_payment_info: arbitrum",
-        "agent_response": "\ud83d\udcb3 **Payment Information - Arbitrum One**\n\n**\ud83d\udcb0 Accepted Currency:** USDC only\n**\ud83d\udd17 Network:** Arbitrum One (Chain ID: 42161)\n**\ud83d\udccd Wallet Address:** `0x742e4c5b8f8de8a3d51b4e4a8d2f6e9c1a3b5d7e`\n**\ud83d\udcc4 USDC Contract:** `0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8`\n\n**\ud83d\udcca Network Details:**\n\u2022 Network Fee: Very Low\n\u2022 Confirmation Time: 1-2 minutes\n\u2022 Minimum Payment: $1.00 USDC\n\u2022 Payment Timeout: 30 minutes\n\n**\u26a0\ufe0f Important:**\n\u2022 Only send USDC tokens to this address\n\u2022 Ensure you're on the correct network (Arbitrum One)\n\u2022 Include your order reference in the transaction memo if possible\n\u2022 Double-check the wallet address before sending\n",
-        "context": {
-          "action": "payment_info_request",
-          "network": "arbitrum",
-          "wallet_provided": true
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:33:59.303183",
-        "user_query": "[User: buyer_1751231403_ad314a73] I have usdc on arbitrum, do you accept that ?",
-        "agent_response": "Yes, we accept USDC payments on the Arbitrum One network. Here are our payment details:\n\n**Accepted Currency:** USDC only\n**Network:** Arbitrum One (Chain ID: 42161)\n**Wallet Address:** `0x742e4c5b8f8de8a3d51b4e4a8d2f6e9c1a3b5d7e`\n**USDC Contract:** `0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8`\n\n**Network Details:**\n*   Network Fee: Very Low\n*   Confirmation Time: 1-2 minutes\n*   Minimum Payment: $1.00 USDC\n*   Payment Timeout: 30 minutes\n\nPlease ensure you are on the correct network (Arbitrum One) and only send USDC tokens to this address. It's also a good idea to double-check the wallet address before sending.\n\nIs there anything else I can help you with today?\n",
-        "context": {
-          "user_id": "",
-          "task_id": "75f0a72f-b67b-4f32-9afd-a9b149084707",
-          "context_id": "86b44c2a-15a6-42a1-ab0f-7cfc97bd92f3"
+          "task_id": "4addd63d-ef17-4bf4-8a91-49ff959c5d83",
+          "context_id": "4613710e-542a-48bd-9767-8ead5f89f5f5"
         }
       }
     ],
     "user_preferences": {},
-    "past_searches": [],
+    "past_searches": [
+      {
+        "timestamp": "2025-07-06T05:27:38.288472",
+        "search_term": "PowerFlow USB-C Charging Cable",
+        "results_count": 1
+      }
+    ],
+    "payment_requests": [],
+    "created_at": "2025-07-06T05:25:44.508886"
+  },
+  "24adb4ad-9744-4214-9e41-2ffc01ad945a": {
+    "conversation_history": [
+      {
+        "timestamp": "2025-07-06T05:29:24.611233",
+        "user_query": "get_payment_info: sepolia",
+        "agent_response": "\ud83d\udcb3 **Payment Information - Sepolia Testnet**\n\n**\ud83d\udcb0 Accepted Currency:** USDT only\n**\ud83d\udd17 Network:** Sepolia Testnet (Chain ID: 11155111)\n**\ud83d\udccd Wallet Address:** `0xA4D11E2fBA62a1Bc4F43F2d1086DaA22E3CE9D6E`\n**\ud83d\udcc4 USDT Contract:** `0xaA8E23Fb1079EA71e0a56F48a2aA51851D8433D0`\n\n**\ud83d\udcca Network Details:**\n\u2022 Network Fee: Low (Testnet)\n\u2022 Confirmation Time: 1-2 minutes\n\u2022 Minimum Payment: $1.00 USDT\n\u2022 Payment Timeout: 30 minutes\n\n**\u26a0\ufe0f Important:**\n\u2022 Only send USDT tokens to this address\n\u2022 Ensure you're on the correct network (Sepolia Testnet)\n\u2022 Include your order reference in the transaction memo if possible\n\u2022 Double-check the wallet address before sending\n",
+        "context": {
+          "action": "payment_info_request",
+          "network": "sepolia",
+          "wallet_provided": true
+        }
+      },
+      {
+        "timestamp": "2025-07-06T05:29:25.572443",
+        "user_query": "Great! I'll take the PowerFlow USB-C Charging Cable for $1.99. Please provide your Sepolia USDT wallet address for payment",
+        "agent_response": "Here is the payment information for your order:\n\n**Accepted Currency:** USDT only\n**Network:** Sepolia Testnet\n**Wallet Address:** `0xA4D11E2fBA62a1Bc4F43F2d1086DaA22E3CE9D6E`\n**USDT Contract:** `0xaA8E23Fb1079EA71e0a56F48a2aA51851D8433D0`\n\n**Network Details:**\n*   Network Fee: Low (Testnet)\n*   Confirmation Time: 1-2 minutes\n\nPlease send exactly $1.99 USDT to the provided wallet address on the Sepolia Testnet. Let me know once the payment is made and provide the transaction hash so I can verify it.\n",
+        "context": {
+          "user_id": "",
+          "task_id": "ca3367b9-d466-4726-ab7c-191fc3ac1665",
+          "context_id": "24adb4ad-9744-4214-9e41-2ffc01ad945a"
+        }
+      },
+      {
+        "timestamp": "2025-07-06T05:30:08.196534",
+        "user_query": "search_product: PowerFlow USB-C Charging Cable",
+        "agent_response": "\ud83d\udd0d **Found 1 product(s) matching 'PowerFlow USB-C Charging Cable':**\n\n\u2022 **PowerFlow USB-C Charging Cable** - $1.99 (Stock: 100)\n",
+        "context": {
+          "action": "product_search",
+          "search_term": "PowerFlow USB-C Charging Cable",
+          "results_found": 1
+        }
+      },
+      {
+        "timestamp": "2025-07-06T05:30:08.198026",
+        "user_query": "search_by_price_range: $0-$500",
+        "agent_response": "\ud83d\udcb0 **Products in price range $0.00 - $500.00 (10 items):**\n\n\u2022 **PowerFlow USB-C Charging Cable** - $1.99 (Stock: 100)\n  Category: Cables & Adapters\n\u2022 **ShieldMax Tempered Glass Screen Protector** - $9.99 (Stock: 75)\n  Category: Mobile Accessories\n\u2022 **GripMount Pro Car Phone Mount** - $19.99 (Stock: 35)\n  Category: Mobile Accessories\n\u2022 **TechGuard Pro iPhone Case** - $24.99 (Stock: 50)\n  Category: Mobile Accessories\n\u2022 **ClickPro Wireless Mouse** - $29.99 (Stock: 40)\n  Category: Computer Accessories\n\u2022 **PowerVault Portable Power Bank 10000mAh** - $34.99 (Stock: 30)\n  Category: Power & Charging\n\u2022 **ErgoDesk Aluminum Laptop Stand** - $45.99 (Stock: 20)\n  Category: Computer Accessories\n\u2022 **BoomBox Elite Bluetooth Speaker** - $59.99 (Stock: 15)\n  Category: Audio\n\u2022 **SonicWave Pro Wireless Bluetooth Headphones** - $79.99 (Stock: 25)\n  Category: Audio\n\u2022 **GameMaster RGB Gaming Keyboard** - $89.99 (Stock: 12)\n  Category: Gaming\n",
+        "context": {
+          "action": "price_search",
+          "min_price": 0,
+          "max_price": 500,
+          "results_found": 10
+        }
+      },
+      {
+        "timestamp": "2025-07-06T05:30:08.684148",
+        "user_query": "I want to buy PowerFlow USB-C Charging Cable. Do you have it in stock? My budget is $500.",
+        "agent_response": "Yes, I found the PowerFlow USB-C Charging Cable in stock. It costs $1.99.\n\nI also found other products within your budget of $500. Would you like to know more about them?\n",
+        "context": {
+          "user_id": "",
+          "task_id": "94e3267a-dbb6-4270-bc7e-093c7f26e32b",
+          "context_id": "27c632e6-7697-44b9-90d5-ea9e5733afe8"
+        }
+      },
+      {
+        "timestamp": "2025-07-06T05:30:20.918030",
+        "user_query": "get_payment_info: sepolia",
+        "agent_response": "\ud83d\udcb3 **Payment Information - Sepolia Testnet**\n\n**\ud83d\udcb0 Accepted Currency:** USDT only\n**\ud83d\udd17 Network:** Sepolia Testnet (Chain ID: 11155111)\n**\ud83d\udccd Wallet Address:** `0xA4D11E2fBA62a1Bc4F43F2d1086DaA22E3CE9D6E`\n**\ud83d\udcc4 USDT Contract:** `0xaA8E23Fb1079EA71e0a56F48a2aA51851D8433D0`\n\n**\ud83d\udcca Network Details:**\n\u2022 Network Fee: Low (Testnet)\n\u2022 Confirmation Time: 1-2 minutes\n\u2022 Minimum Payment: $1.00 USDT\n\u2022 Payment Timeout: 30 minutes\n\n**\u26a0\ufe0f Important:**\n\u2022 Only send USDT tokens to this address\n\u2022 Ensure you're on the correct network (Sepolia Testnet)\n\u2022 Include your order reference in the transaction memo if possible\n\u2022 Double-check the wallet address before sending\n",
+        "context": {
+          "action": "payment_info_request",
+          "network": "sepolia",
+          "wallet_provided": true
+        }
+      },
+      {
+        "timestamp": "2025-07-06T05:30:21.635516",
+        "user_query": "Great! I'll take the PowerFlow USB-C Charging Cable for $1.99. Please provide your Sepolia USDT wallet address for payment.",
+        "agent_response": "You're all set! The wallet address for USDT payment on the Sepolia testnet is `0xA4D11E2fBA62a1Bc4F43F2d1086DaA22E3CE9D6E`. Please make sure to send USDT on the Sepolia network. The network fee is low, and confirmations typically take 1-2 minutes.\n\nLet me know your transaction ID once the payment is complete!\n",
+        "context": {
+          "user_id": "",
+          "task_id": "6b4f26c6-95ea-4f30-8993-edc6b38bc96b",
+          "context_id": "2fecc13f-b837-43f1-a0c1-6d47448b53bf"
+        }
+      },
+      {
+        "timestamp": "2025-07-06T05:31:04.249647",
+        "user_query": "\u2705 PAYMENT SUCCESSFUL! $1.99 USDT sent to 0xA4D11E2fBA62a1Bc4F43F2d1086DaA22E3CE9D6E. Transaction confirmed: cf81aa4e3b214c8e36d1c74d389aa203d794abe9e371e4b4937734466ee45cfb (Block: 8702436)",
+        "agent_response": "Thank you for your payment! I have verified the transaction. \n\nIs there anything else I can help you with today? Perhaps you're looking for some top-rated products or want to compare some items?\n",
+        "context": {
+          "user_id": "",
+          "task_id": "079c2e62-d344-43e5-9ee4-96dc9d07b90b",
+          "context_id": "7e982036-d4f7-4599-9db9-608bb26203f6"
+        }
+      }
+    ],
+    "user_preferences": {},
+    "past_searches": [
+      {
+        "timestamp": "2025-07-06T05:30:08.193175",
+        "search_term": "PowerFlow USB-C Charging Cable",
+        "results_count": 1
+      }
+    ],
     "payment_requests": [
       {
-        "timestamp": "2025-06-29T22:33:29.779562",
-        "network": "Polygon (MATIC)",
-        "wallet_address": "0x742e4c5b8f8de8a3d51b4e4a8d2f6e9c1a3b5d7e",
-        "user_id": "buyer_1751231403_ad314a73",
-        "session_id": "eedf0069-d183-4407-bf6d-2823e739fc58"
+        "timestamp": "2025-07-06T05:29:24.609753",
+        "network": "Sepolia Testnet",
+        "wallet_address": "0xA4D11E2fBA62a1Bc4F43F2d1086DaA22E3CE9D6E",
+        "user_id": "",
+        "session_id": "24adb4ad-9744-4214-9e41-2ffc01ad945a"
       },
       {
-        "timestamp": "2025-06-29T22:33:58.445907",
-        "network": "Arbitrum One",
-        "wallet_address": "0x742e4c5b8f8de8a3d51b4e4a8d2f6e9c1a3b5d7e",
-        "user_id": "buyer_1751231403_ad314a73",
-        "session_id": "eedf0069-d183-4407-bf6d-2823e739fc58"
+        "timestamp": "2025-07-06T05:30:20.916360",
+        "network": "Sepolia Testnet",
+        "wallet_address": "0xA4D11E2fBA62a1Bc4F43F2d1086DaA22E3CE9D6E",
+        "user_id": "",
+        "session_id": "24adb4ad-9744-4214-9e41-2ffc01ad945a"
       }
     ],
-    "created_at": "2025-06-29T22:33:23.367626"
+    "created_at": "2025-07-06T05:29:24.609773"
   },
-  "ce7f4752-b8cc-4670-aae4-6818e818354c": {
+  "ai_buyer_1751778003_decac5_session": {
     "conversation_history": [
       {
-        "timestamp": "2025-06-29T22:43:34.964159",
-        "user_query": "[User: buyer_1751231403_ad314a73] hey",
+        "timestamp": "2025-07-06T06:00:09.779152",
+        "user_query": "search_product: PowerFlow USB-C Charging Cable",
+        "agent_response": "\ud83d\udd0d **Found 1 product(s) matching 'PowerFlow USB-C Charging Cable':**\n\n\u2022 **PowerFlow USB-C Charging Cable** - $1.99 (Stock: 100)\n",
+        "context": {
+          "action": "product_search",
+          "search_term": "PowerFlow USB-C Charging Cable",
+          "results_found": 1
+        }
+      }
+    ],
+    "user_preferences": {},
+    "past_searches": [
+      {
+        "timestamp": "2025-07-06T06:00:09.776782",
+        "search_term": "PowerFlow USB-C Charging Cable",
+        "results_count": 1
+      }
+    ],
+    "payment_requests": [],
+    "created_at": "2025-07-06T06:00:09.776747"
+  },
+  "1b48da38-7bc8-45da-bf93-2a43c5fb1a51": {
+    "conversation_history": [
+      {
+        "timestamp": "2025-07-06T06:15:57.747315",
+        "user_query": "search_product: PowerFlow USB-C Charging Cable",
+        "agent_response": "\ud83d\udd0d **Found 1 product(s) matching 'PowerFlow USB-C Charging Cable':**\n\n\u2022 **PowerFlow USB-C Charging Cable** - $1.99 (Stock: 100)\n",
+        "context": {
+          "action": "product_search",
+          "search_term": "PowerFlow USB-C Charging Cable",
+          "results_found": 1
+        }
+      },
+      {
+        "timestamp": "2025-07-06T06:15:57.750225",
+        "user_query": "search_by_price_range: $0-$500",
+        "agent_response": "\ud83d\udcb0 **Products in price range $0.00 - $500.00 (10 items):**\n\n\u2022 **PowerFlow USB-C Charging Cable** - $1.99 (Stock: 100)\n  Category: Cables & Adapters\n\u2022 **ShieldMax Tempered Glass Screen Protector** - $9.99 (Stock: 75)\n  Category: Mobile Accessories\n\u2022 **GripMount Pro Car Phone Mount** - $19.99 (Stock: 35)\n  Category: Mobile Accessories\n\u2022 **TechGuard Pro iPhone Case** - $24.99 (Stock: 50)\n  Category: Mobile Accessories\n\u2022 **ClickPro Wireless Mouse** - $29.99 (Stock: 40)\n  Category: Computer Accessories\n\u2022 **PowerVault Portable Power Bank 10000mAh** - $34.99 (Stock: 30)\n  Category: Power & Charging\n\u2022 **ErgoDesk Aluminum Laptop Stand** - $45.99 (Stock: 20)\n  Category: Computer Accessories\n\u2022 **BoomBox Elite Bluetooth Speaker** - $59.99 (Stock: 15)\n  Category: Audio\n\u2022 **SonicWave Pro Wireless Bluetooth Headphones** - $79.99 (Stock: 25)\n  Category: Audio\n\u2022 **GameMaster RGB Gaming Keyboard** - $89.99 (Stock: 12)\n  Category: Gaming\n",
+        "context": {
+          "action": "price_search",
+          "min_price": 0,
+          "max_price": 500,
+          "results_found": 10
+        }
+      },
+      {
+        "timestamp": "2025-07-06T06:15:58.324132",
+        "user_query": "I want to buy PowerFlow USB-C Charging Cable. Do you have it in stock? My budget is $500.",
+        "agent_response": "Yes, the PowerFlow USB-C Charging Cable is in stock for $1.99.\n\nI also found other products within your $500 budget. Would you like to know more about them?\n",
+        "context": {
+          "user_id": "",
+          "task_id": "ca14c4f0-efd8-4bbc-a6f6-4e3f1aacd382",
+          "context_id": "bb5f5588-fa9a-4127-9eb2-01ae215f4ad7"
+        }
+      },
+      {
+        "timestamp": "2025-07-06T06:16:09.871649",
+        "user_query": "Hello! I'm looking for PowerFlow USB-C Charging Cable. What products do you have available? (User: ai_buyer_1751778951_d32624, Session: ai_buyer_1751778951_d32624_session)",
+        "agent_response": "That's great! We have the PowerFlow USB-C Charging Cable in stock, and it's priced at $1.99. The current stock level is 100 units.\n\nWould you like to know more about this product, or perhaps check out other items?\n",
+        "context": {
+          "user_id": "",
+          "task_id": "2a4e1470-e93a-4984-81d3-b6a59b429c94",
+          "context_id": "a4cce999-8ee2-408a-9a72-1bc2a7f2cabf"
+        }
+      },
+      {
+        "timestamp": "2025-07-06T06:17:56.881788",
+        "user_query": "search_product: PowerFlow USB-C Charging Cable",
+        "agent_response": "\ud83d\udd0d **Found 1 product(s) matching 'PowerFlow USB-C Charging Cable':**\n\n\u2022 **PowerFlow USB-C Charging Cable** - $1.99 (Stock: 100)\n",
+        "context": {
+          "action": "product_search",
+          "search_term": "PowerFlow USB-C Charging Cable",
+          "results_found": 1
+        }
+      },
+      {
+        "timestamp": "2025-07-06T06:17:57.392399",
+        "user_query": "I want to buy PowerFlow USB-C Charging Cable. Do you have it in stock? My budget is $500.",
+        "agent_response": "Yes, we have the PowerFlow USB-C Charging Cable in stock for $1.99. It seems to be well within your budget of $500.\n\nWould you like to purchase it, or would you like to explore other products?\n",
+        "context": {
+          "user_id": "",
+          "task_id": "ca10eb5f-81d7-4f05-8b55-c0a36631f9b0",
+          "context_id": "d67a10bb-27e2-45f2-b7d8-39432e53af75"
+        }
+      },
+      {
+        "timestamp": "2025-07-06T06:18:10.779187",
+        "user_query": "get_payment_info: Sepolia",
+        "agent_response": "\ud83d\udcb3 **Payment Information - Sepolia Testnet**\n\n**\ud83d\udcb0 Accepted Currency:** USDT only\n**\ud83d\udd17 Network:** Sepolia Testnet (Chain ID: 11155111)\n**\ud83d\udccd Wallet Address:** `0xA4D11E2fBA62a1Bc4F43F2d1086DaA22E3CE9D6E`\n**\ud83d\udcc4 USDT Contract:** `0xaA8E23Fb1079EA71e0a56F48a2aA51851D8433D0`\n\n**\ud83d\udcca Network Details:**\n\u2022 Network Fee: Low (Testnet)\n\u2022 Confirmation Time: 1-2 minutes\n\u2022 Minimum Payment: $1.00 USDT\n\u2022 Payment Timeout: 30 minutes\n\n**\u26a0\ufe0f Important:**\n\u2022 Only send USDT tokens to this address\n\u2022 Ensure you're on the correct network (Sepolia Testnet)\n\u2022 Include your order reference in the transaction memo if possible\n\u2022 Double-check the wallet address before sending\n",
+        "context": {
+          "action": "payment_info_request",
+          "network": "Sepolia",
+          "wallet_provided": true
+        }
+      },
+      {
+        "timestamp": "2025-07-06T06:18:11.818460",
+        "user_query": "Perfect! I'll take the PowerFlow USB-C Charging Cable for $1.99. Please provide your Sepolia USDT wallet address so I can send the payment.",
+        "agent_response": "You got it! The payment information for Sepolia USDT is:\n\n**Accepted Currency:** USDT only\n**Network:** Sepolia Testnet (Chain ID: 11155111)\n**Wallet Address:** `0xA4D11E2fBA62a1Bc4F43F2d1086DaA22E3CE9D6E`\n**USDT Contract:** `0xaA8E23Fb1079EA71e0a56F48a2aA51851D8433D0`\n\nPlease make sure to send USDT on the Sepolia Testnet. The network fee is low and confirmation typically takes 1-2 minutes. You have 30 minutes to complete the payment.\n\nOnce you've sent the payment, please provide the transaction hash so I can verify it.\n\nCould you also confirm your shipping address? I need the following details:\n* Full Name\n* Street Address (including apt/unit number)\n* City\n* State/Province\n* Postal Code\n* Country\n",
+        "context": {
+          "user_id": "",
+          "task_id": "485963c0-2f53-4654-81c6-2a11862f40ee",
+          "context_id": "8f5eed9f-a146-4f59-88a4-b29185ed7d36"
+        }
+      },
+      {
+        "timestamp": "2025-07-06T06:19:01.194690",
+        "user_query": "\u2705 PAYMENT SUCCESSFUL! $1.99 USDT sent to 0xA4D11E2fBA62a1Bc4F43F2d1086DaA22E3CE9D6E. Transaction confirmed: b6440b117fc8f6f5751132f7e7a912b1857e9498f8b08f42f0153441e48fa96e (Block: 8702676)",
         "agent_response": "Hello! How can I help you today? \n\n",
         "context": {
           "user_id": "",
-          "task_id": "00efc184-4d93-48fa-b806-bd398a09f32f",
-          "context_id": "ce7f4752-b8cc-4670-aae4-6818e818354c"
+          "task_id": "2c764e8f-2fcd-4135-98ea-a1983d939f68",
+          "context_id": "9a41bb0c-a7e6-4254-ae22-0148d1011a50"
         }
       },
       {
-        "timestamp": "2025-06-29T22:43:45.690087",
-        "user_query": "get_supported_networks",
-        "agent_response": "\ud83c\udf10 **Supported Payment Networks:**\n\n**Ethereum** (ethereum)\n\u2022 Chain ID: 1\n\u2022 Network Fee: High\n\u2022 Confirmation Time: 15 minutes\n\n**Polygon (MATIC)** (polygon)\n\u2022 Chain ID: 137\n\u2022 Network Fee: Low\n\u2022 Confirmation Time: 2-5 minutes\n\n**Arbitrum One** (arbitrum)\n\u2022 Chain ID: 42161\n\u2022 Network Fee: Very Low\n\u2022 Confirmation Time: 1-2 minutes\n\n**\ud83d\udca1 Recommended:** Polygon (MATIC) (Low fees, fast confirmations)\n\n**\ud83d\udcdd To get payment address:** Ask for 'payment info' and specify the network\nExample: 'I want to pay with USDC on Polygon'\n",
-        "context": {
-          "action": "networks_info_request"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:43:46.394760",
-        "user_query": "[User: buyer_1751231403_ad314a73] do you accept crypto payment ",
-        "agent_response": "Yes, we do! We accept USDC (USD Coin) payments on several blockchain networks.\n\nWe currently support:\n*   **Ethereum**: Higher network fees, takes about 15 minutes for confirmation.\n*   **Polygon (MATIC)**: Low network fees and fast confirmations (2-5 minutes).\n*   **Arbitrum One**: Very low network fees and even faster confirmations (1-2 minutes).\n\nI recommend using the **Polygon** network for its balance of low fees and quick transaction times, unless you have a preference for another network.\n\nWould you like to know our USDC wallet address for any of these networks?\n",
-        "context": {
-          "user_id": "",
-          "task_id": "940c0e60-00a9-4c75-8771-44f56d062ef1",
-          "context_id": "b1f18f98-b0cb-4cff-a4ae-5e9f17da77d1"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:44:26.567391",
-        "user_query": "[User: buyer_1751231403_ad314a73] i have send 100 usdc to your arbitrum address",
-        "agent_response": "The transaction hash you provided, \"i have send 100 usdc to your arbitrum address\", appears to be invalid. Please provide the valid transaction hash so I can verify your payment.\n",
-        "context": {
-          "user_id": "",
-          "task_id": "fa44cd92-7ba9-4e18-aff6-808a916a02e9",
-          "context_id": "b2032b02-94e7-47fb-aeab-854f98ebf2b3"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:45:03.787772",
-        "user_query": "[User: buyer_1751231403_ad314a73] here is the transaction hash - 0xea05f86b7220b17c8a2db81dcdac2a90c9698720b2167db4aaf172ae5d9aa03a",
-        "agent_response": "I need a bit more information to verify the payment. Could you please tell me the expected amount of the transaction and the network it was sent on?\n",
-        "context": {
-          "user_id": "",
-          "task_id": "78bd8c0a-c0b9-47fc-8305-8c04dd512016",
-          "context_id": "bd31838c-ac87-4424-a681-f0bd8931ea9b"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:45:27.564588",
-        "user_query": "[User: buyer_1751231403_ad314a73] 100 usdc on arbitum network with this hash 0xea05f86b7220b17c8a2db81dcdac2a90c9698720b2167db4aaf172ae5d9aa03a",
-        "agent_response": "I couldn't find that payment. Please double-check the hash and try again.\n",
-        "context": {
-          "user_id": "",
-          "task_id": "118071c5-d541-45da-ae88-0cad5470d78e",
-          "context_id": "d6883835-5f67-4bec-946f-df8d1e8e4434"
-        }
-      }
-    ],
-    "user_preferences": {},
-    "past_searches": [],
-    "payment_requests": [],
-    "created_at": "2025-06-29T22:43:34.964136"
-  },
-  "e145d591-fc43-4c8b-8e31-67b98194c7a6": {
-    "conversation_history": [
-      {
-        "timestamp": "2025-06-29T22:46:20.537065",
-        "user_query": "[User: buyer_1751231403_ad314a73] 100 usdc on arbitum network with this hash 0xea05f86b7220b17c8a2db81dcdac2a90c9698720b2167db4aaf172ae5d9aa03a",
-        "agent_response": "I couldn't find the transaction details for the USDC payment you mentioned. Please double-check the transaction hash and ensure the payment was sent to the correct address on the Arbitrum network. If you believe the details are correct, you can try verifying the transaction on a blockchain explorer.\n",
-        "context": {
-          "user_id": "",
-          "task_id": "a539861c-64c6-46f1-a4a7-cfa9176fd07b",
-          "context_id": "e145d591-fc43-4c8b-8e31-67b98194c7a6"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:47:13.215794",
-        "user_query": "[User: buyer_1751231403_ad314a73] can you tell me what your last transaction you receieved was ?",
-        "agent_response": "I am sorry, but I cannot find any record of a transaction with the provided hash. Please double-check the transaction hash and try again.\n",
-        "context": {
-          "user_id": "",
-          "task_id": "403af322-3198-4518-840e-5cd181a2bca3",
-          "context_id": "94cadd49-7056-440b-9f5a-31c96b75a3e1"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:47:25.356793",
-        "user_query": "[User: buyer_1751231403_ad314a73] bye",
-        "agent_response": "Goodbye! Have a great day! If you need anything else, feel free to start a new chat.\n",
-        "context": {
-          "user_id": "",
-          "task_id": "cd89cd31-7960-4820-b9f7-3cc06f829099",
-          "context_id": "68429095-16e9-4d7e-bdfb-6c777c315309"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:47:29.318756",
-        "user_query": "[User: buyer_1751231403_ad314a73] hello",
-        "agent_response": "Hello! How can I help you today?\n",
-        "context": {
-          "user_id": "",
-          "task_id": "bfa0e1b6-39f7-4f9c-bc6f-cbfffb31f5d8",
-          "context_id": "273bdaba-ce3e-4728-834e-647f2042b44b"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:47:55.695383",
-        "user_query": "[User: buyer_1751231403_ad314a73] I just send you a payment for 10 usdc on ethereum now with this hash - 100 usdc on arbitum network with this hash 0xea05f86b7220b17c8a2db81dcdac2a90c9698720b2167db4aaf172ae5d9aa03a",
-        "agent_response": "I was unable to verify your payment of 10 USDC on Ethereum or 100 USDC on Arbitrum. Please double-check the transaction hash and ensure you sent the correct amount on the correct network. If you continue to have issues, please contact support.\n",
-        "context": {
-          "user_id": "",
-          "task_id": "3d256bba-aee4-4214-a04a-bde71a1486ed",
-          "context_id": "f152e6c7-2b21-4d5d-976f-eab29cf19d1b"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:48:48.394064",
-        "user_query": "[User: buyer_1751231403_ad314a73] exit()",
-        "agent_response": "Hello! I'm sorry to see you go. A new session has been started for you. If you need anything else or wish to discuss your previous conversations, feel free to ask!\n",
-        "context": {
-          "user_id": "",
-          "task_id": "dd530103-bfda-4cb7-ba77-96cbc885487b",
-          "context_id": "481f1e0a-8a8e-4d7c-ad2e-00ed4f3a097e"
-        }
-      }
-    ],
-    "user_preferences": {
-      "last_interaction": "goodbye"
-    },
-    "past_searches": [],
-    "payment_requests": [],
-    "created_at": "2025-06-29T22:46:20.537041"
-  },
-  "cbf499cc-fda3-4a10-b230-2fc4abc54dc3": {
-    "conversation_history": [
-      {
-        "timestamp": "2025-06-29T22:53:11.732948",
-        "user_query": "[User: buyer_1751231403_ad314a73] hey",
-        "agent_response": "Hello! How can I help you today?\n\n",
-        "context": {
-          "user_id": "",
-          "task_id": "a80b5557-c2f8-4cd2-bd18-001f09ca108b",
-          "context_id": "cbf499cc-fda3-4a10-b230-2fc4abc54dc3"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:53:25.241749",
-        "user_query": "check_inventory",
-        "agent_response": "\ud83d\udce6 **Current Inventory:**\n\n\u2022 **Wireless Bluetooth Headphones** - $79.99 (Stock: 25)\n\u2022 **Smartphone Case (iPhone)** - $24.99 (Stock: 50)\n\u2022 **USB-C Charging Cable** - $12.99 (Stock: 100)\n\u2022 **Portable Power Bank 10000mAh** - $34.99 (Stock: 30)\n\u2022 **Bluetooth Speaker** - $59.99 (Stock: 15)\n\u2022 **Laptop Stand** - $45.99 (Stock: 20)\n\u2022 **Wireless Mouse** - $29.99 (Stock: 40)\n\u2022 **Screen Protector** - $9.99 (Stock: 75)\n\u2022 **Car Phone Mount** - $19.99 (Stock: 35)\n\u2022 **Gaming Keyboard** - $89.99 (Stock: 12)\n",
-        "context": {
-          "action": "inventory_check",
-          "items_count": 10
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:53:26.003604",
-        "user_query": "[User: buyer_1751231403_ad314a73] show me your inventory ",
-        "agent_response": "Here is our current inventory:\n\n*   **Wireless Bluetooth Headphones** - $79.99 (Stock: 25)\n*   **Smartphone Case (iPhone)** - $24.99 (Stock: 50)\n*   **USB-C Charging Cable** - $12.99 (Stock: 100)\n*   **Portable Power Bank 10000mAh** - $34.99 (Stock: 30)\n*   **Bluetooth Speaker** - $59.99 (Stock: 15)\n*   **Laptop Stand** - $45.99 (Stock: 20)\n*   **Wireless Mouse** - $29.99 (Stock: 40)\n*   **Screen Protector** - $9.99 (Stock: 75)\n*   **Car Phone Mount** - $19.99 (Stock: 35)\n*   **Gaming Keyboard** - $89.99 (Stock: 12)\n\nLet me know if anything catches your eye or if you're looking for something specific!\n",
-        "context": {
-          "user_id": "",
-          "task_id": "c2fed1e7-adad-4f52-bdca-c75f32d0e359",
-          "context_id": "b308dbfe-684e-44e5-a437-e45022eb79bc"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:54:05.437275",
-        "user_query": "search_product: USB-C cable",
-        "agent_response": "\u274c No products found matching 'USB-C cable'",
+        "timestamp": "2025-07-06T06:19:09.790334",
+        "user_query": "search_product: PowerFlow USB-C Charging Cable",
+        "agent_response": "\ud83d\udd0d **Found 1 product(s) matching 'PowerFlow USB-C Charging Cable':**\n\n\u2022 **PowerFlow USB-C Charging Cable** - $1.99 (Stock: 100)\n",
         "context": {
           "action": "product_search",
-          "search_term": "USB-C cable",
-          "results_found": 0
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:54:05.882389",
-        "user_query": "[User: buyer_1751231403_ad314a73] I want to pay for 1 USB-C cable how much is my total and how do i pay ?",
-        "agent_response": "I'm sorry, but I couldn't find any USB-C cables in our inventory. Please let me know if you're interested in any other products!\n",
-        "context": {
-          "user_id": "",
-          "task_id": "c5207d58-7d50-4a99-9581-02d7263d84c5",
-          "context_id": "357659a8-55bb-4d70-bdc0-93371c9e4b53"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:54:40.294619",
-        "user_query": "search_product: USB-C Charging Cable",
-        "agent_response": "\ud83d\udd0d **Found 1 product(s) matching 'USB-C Charging Cable':**\n\n\u2022 **USB-C Charging Cable** - $12.99 (Stock: 100)\n",
-        "context": {
-          "action": "product_search",
-          "search_term": "USB-C Charging Cable",
+          "search_term": "PowerFlow USB-C Charging Cable",
           "results_found": 1
         }
       },
       {
-        "timestamp": "2025-06-29T22:54:40.297407",
-        "user_query": "get_supported_networks",
-        "agent_response": "\ud83c\udf10 **Supported Payment Networks:**\n\n**Ethereum** (ethereum)\n\u2022 Chain ID: 1\n\u2022 Network Fee: High\n\u2022 Confirmation Time: 15 minutes\n\n**Polygon (MATIC)** (polygon)\n\u2022 Chain ID: 137\n\u2022 Network Fee: Low\n\u2022 Confirmation Time: 2-5 minutes\n\n**Arbitrum One** (arbitrum)\n\u2022 Chain ID: 42161\n\u2022 Network Fee: Very Low\n\u2022 Confirmation Time: 1-2 minutes\n\n**\ud83d\udca1 Recommended:** Polygon (MATIC) (Low fees, fast confirmations)\n\n**\ud83d\udcdd To get payment address:** Ask for 'payment info' and specify the network\nExample: 'I want to pay with USDC on Polygon'\n",
-        "context": {
-          "action": "networks_info_request"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:54:40.703800",
-        "user_query": "[User: buyer_1751231403_ad314a73] USB-C Charging Cable how much is it and how can i pay ?",
-        "agent_response": "The USB-C Charging Cable costs $12.99. We accept USDC payments on the Ethereum, Polygon, and Arbitrum networks. Polygon is recommended for lower fees and faster confirmations.\n\nWould you like to proceed with a purchase or need more information on payment?\n",
+        "timestamp": "2025-07-06T06:19:10.272803",
+        "user_query": "I specifically need PowerFlow USB-C Charging Cable. Do you have this exact product and what's the price?",
+        "agent_response": "Yes, we have the PowerFlow USB-C Charging Cable in stock, and it costs $1.99.\n",
         "context": {
           "user_id": "",
-          "task_id": "de7472eb-d396-4db8-a50d-6a6767825bb3",
-          "context_id": "4c53baf0-3777-47f3-8134-68cceca053fa"
+          "task_id": "78bda8d8-552a-4611-a600-2876fbdf7353",
+          "context_id": "9662d1a7-d026-4a1b-afb8-58f3242fe8c3"
         }
       },
       {
-        "timestamp": "2025-06-29T22:54:51.652674",
-        "user_query": "[User: buyer_1751231403_ad314a73] yes",
-        "agent_response": "Hello! I see you were looking for a \"USB-C Charging Cable\" in your previous search. How can I help you today?\n",
-        "context": {
-          "user_id": "",
-          "task_id": "26d2907a-584c-4ddf-a7e8-c198cff2bb0a",
-          "context_id": "b7be0b79-8ea3-4c2f-b61a-c784f993661b"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:55:15.467341",
-        "user_query": "get_supported_networks",
-        "agent_response": "\ud83c\udf10 **Supported Payment Networks:**\n\n**Ethereum** (ethereum)\n\u2022 Chain ID: 1\n\u2022 Network Fee: High\n\u2022 Confirmation Time: 15 minutes\n\n**Polygon (MATIC)** (polygon)\n\u2022 Chain ID: 137\n\u2022 Network Fee: Low\n\u2022 Confirmation Time: 2-5 minutes\n\n**Arbitrum One** (arbitrum)\n\u2022 Chain ID: 42161\n\u2022 Network Fee: Very Low\n\u2022 Confirmation Time: 1-2 minutes\n\n**\ud83d\udca1 Recommended:** Polygon (MATIC) (Low fees, fast confirmations)\n\n**\ud83d\udcdd To get payment address:** Ask for 'payment info' and specify the network\nExample: 'I want to pay with USDC on Polygon'\n",
-        "context": {
-          "action": "networks_info_request"
-        }
-      },
-      {
-        "timestamp": "2025-06-29T22:55:15.473065",
-        "user_query": "get_payment_info: polygon",
-        "agent_response": "\ud83d\udcb3 **Payment Information - Polygon (MATIC)**\n\n**\ud83d\udcb0 Accepted Currency:** USDC only\n**\ud83d\udd17 Network:** Polygon (MATIC) (Chain ID: 137)\n**\ud83d\udccd Wallet Address:** `0xA4D11E2fBA62a1Bc4F43F2d1086DaA22E3CE9D6E`\n**\ud83d\udcc4 USDC Contract:** `0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174`\n\n**\ud83d\udcca Network Details:**\n\u2022 Network Fee: Low\n\u2022 Confirmation Time: 2-5 minutes\n\u2022 Minimum Payment: $1.00 USDC\n\u2022 Payment Timeout: 30 minutes\n\n**\u26a0\ufe0f Important:**\n\u2022 Only send USDC tokens to this address\n\u2022 Ensure you're on the correct network (Polygon (MATIC))\n\u2022 Include your order reference in the transaction memo if possible\n\u2022 Double-check the wallet address before sending\n",
+        "timestamp": "2025-07-06T06:19:21.244216",
+        "user_query": "get_payment_info: Sepolia",
+        "agent_response": "\ud83d\udcb3 **Payment Information - Sepolia Testnet**\n\n**\ud83d\udcb0 Accepted Currency:** USDT only\n**\ud83d\udd17 Network:** Sepolia Testnet (Chain ID: 11155111)\n**\ud83d\udccd Wallet Address:** `0xA4D11E2fBA62a1Bc4F43F2d1086DaA22E3CE9D6E`\n**\ud83d\udcc4 USDT Contract:** `0xaA8E23Fb1079EA71e0a56F48a2aA51851D8433D0`\n\n**\ud83d\udcca Network Details:**\n\u2022 Network Fee: Low (Testnet)\n\u2022 Confirmation Time: 1-2 minutes\n\u2022 Minimum Payment: $1.00 USDT\n\u2022 Payment Timeout: 30 minutes\n\n**\u26a0\ufe0f Important:**\n\u2022 Only send USDT tokens to this address\n\u2022 Ensure you're on the correct network (Sepolia Testnet)\n\u2022 Include your order reference in the transaction memo if possible\n\u2022 Double-check the wallet address before sending\n",
         "context": {
           "action": "payment_info_request",
-          "network": "polygon",
+          "network": "Sepolia",
           "wallet_provided": true
         }
       },
       {
-        "timestamp": "2025-06-29T22:55:16.322323",
-        "user_query": "[User: buyer_1751231403_ad314a73] send me payement detail",
-        "agent_response": "We accept payments in USDC. I've provided our wallet address and details for the Polygon network, which offers low fees and fast confirmations.\n\n**Payment Information - Polygon (MATIC)**\n\n*   **Accepted Currency:** USDC only\n*   **Network:** Polygon (MATIC) (Chain ID: 137)\n*   **Wallet Address:** `0xA4D11E2fBA62a1Bc4F43F2d1086DaA22E3CE9D6E`\n*   **USDC Contract:** `0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174`\n\n**Network Details:**\n*   Network Fee: Low\n*   Confirmation Time: 2-5 minutes\n*   Minimum Payment: $1.00 USDC\n*   Payment Timeout: 30 minutes\n\n**Important:**\n*   Only send USDC tokens to this address.\n*   Ensure you're on the correct network (Polygon (MATIC)).\n*   Include your order reference in the transaction memo if possible.\n*   Double-check the wallet address before sending.\n",
+        "timestamp": "2025-07-06T06:19:22.021578",
+        "user_query": "Perfect! I'll take the PowerFlow USB-C Charging Cable for $1.99. Please provide your Sepolia USDT wallet address so I can send the payment.",
+        "agent_response": "You're all set for the PowerFlow USB-C Charging Cable! The total is $1.99.\n\nHere's our Sepolia USDT wallet address for the payment: `0xA4D11E2fBA62a1Bc4F43F2d1086DaA22E3CE9D6E`.\n\nPlease make sure to send USDT on the Sepolia Testnet. Once the payment is sent, please provide the transaction hash. Also, I'll need your shipping address to process the order. Could you please provide your full name, street address, city, state/province, postal code, and country?\n",
         "context": {
           "user_id": "",
-          "task_id": "ffbc81aa-751a-41c2-b8c3-cf364db96ea6",
-          "context_id": "75368a8f-2cb3-465c-a794-dfb6a408e9dd"
+          "task_id": "080db1b6-bdf5-49a5-8c00-c5ff5de7045c",
+          "context_id": "b1c5beba-79df-4a59-a987-116be328dbe1"
+        }
+      },
+      {
+        "timestamp": "2025-07-06T06:20:05.397343",
+        "user_query": "\u2705 PAYMENT SUCCESSFUL! $1.99 USDT sent to 0xA4D11E2fBA62a1Bc4F43F2d1086DaA22E3CE9D6E. Transaction confirmed: 2faf2dd4caf265fc55cf8ec28fd475b6bfb86883ac1631bba5823f93332a3f1b (Block: 8702681)",
+        "agent_response": "I see that your payment was successful! Thank you for your purchase.\n\nTo help you with your order, please provide the complete shipping address, including:\n* Full Name\n* Street Address (including apartment/unit number if applicable)\n* City\n* State/Province\n* Postal Code/ZIP\n* Country\n",
+        "context": {
+          "user_id": "",
+          "task_id": "9f6a41e6-adb2-4439-91d2-f6041839bce2",
+          "context_id": "8aadfe9f-8e2f-45c4-8a2d-43fec28731f0"
+        }
+      },
+      {
+        "timestamp": "2025-07-06T06:20:25.610733",
+        "user_query": "\ud83d\udce6 SHIPPING ADDRESS CONFIRMED:\n\ud83d\udccd Name: John Smith\n\ud83c\udfe0 Address: 123 Main Street, Apt 4B\n\ud83c\udfd9\ufe0f  City: San Francisco, CA 94102\n\ud83c\udf0d Country: USA\n\ud83d\udcde Phone: +1-555-0123\n\ud83d\udd17 Transaction: dummy_hash\n\u2705 Shipping will be processed within 24-48 hours",
+        "agent_response": "I see that your shipping address has been confirmed. Have you made the USDT payment yet? If so, please provide the transaction hash and the amount you paid so I can verify it.\n",
+        "context": {
+          "user_id": "",
+          "task_id": "bc519ef2-ea3f-45c5-8d3b-1df2d0e2b368",
+          "context_id": "1c40f601-ed50-4dfc-9244-d50d0129fac6"
         }
       }
     ],
     "user_preferences": {},
     "past_searches": [
       {
-        "timestamp": "2025-06-29T22:54:05.432766",
-        "search_term": "USB-C cable",
-        "results_count": 0
+        "timestamp": "2025-07-06T06:02:51.903258",
+        "search_term": "PowerFlow USB-C Charging Cable",
+        "results_count": 1
       },
       {
-        "timestamp": "2025-06-29T22:54:40.290550",
-        "search_term": "USB-C Charging Cable",
+        "timestamp": "2025-07-06T06:10:51.916632",
+        "search_term": "PowerFlow USB-C Charging Cable",
+        "results_count": 1
+      },
+      {
+        "timestamp": "2025-07-06T06:15:57.744241",
+        "search_term": "PowerFlow USB-C Charging Cable",
+        "results_count": 1
+      },
+      {
+        "timestamp": "2025-07-06T06:17:56.878737",
+        "search_term": "PowerFlow USB-C Charging Cable",
+        "results_count": 1
+      },
+      {
+        "timestamp": "2025-07-06T06:19:09.787897",
+        "search_term": "PowerFlow USB-C Charging Cable",
         "results_count": 1
       }
     ],
     "payment_requests": [
       {
-        "timestamp": "2025-06-29T22:55:15.470708",
-        "network": "Polygon (MATIC)",
+        "timestamp": "2025-07-06T06:11:05.467008",
+        "network": "Sepolia Testnet",
         "wallet_address": "0xA4D11E2fBA62a1Bc4F43F2d1086DaA22E3CE9D6E",
-        "user_id": "buyer_1751231403_ad314a73",
-        "session_id": "cbf499cc-fda3-4a10-b230-2fc4abc54dc3"
+        "user_id": "",
+        "session_id": "1b48da38-7bc8-45da-bf93-2a43c5fb1a51"
+      },
+      {
+        "timestamp": "2025-07-06T06:18:10.775264",
+        "network": "Sepolia Testnet",
+        "wallet_address": "0xA4D11E2fBA62a1Bc4F43F2d1086DaA22E3CE9D6E",
+        "user_id": "",
+        "session_id": "1b48da38-7bc8-45da-bf93-2a43c5fb1a51"
+      },
+      {
+        "timestamp": "2025-07-06T06:19:21.240610",
+        "network": "Sepolia Testnet",
+        "wallet_address": "0xA4D11E2fBA62a1Bc4F43F2d1086DaA22E3CE9D6E",
+        "user_id": "",
+        "session_id": "1b48da38-7bc8-45da-bf93-2a43c5fb1a51"
       }
     ],
-    "created_at": "2025-06-29T22:53:11.732930"
+    "created_at": "2025-07-06T06:00:10.228577"
+  },
+  "ai_buyer_1751778951_d32624_session": {
+    "conversation_history": [
+      {
+        "timestamp": "2025-07-06T06:16:09.303679",
+        "user_query": "search_product: PowerFlow USB-C Charging Cable",
+        "agent_response": "\ud83d\udd0d **Found 1 product(s) matching 'PowerFlow USB-C Charging Cable':**\n\n\u2022 **PowerFlow USB-C Charging Cable** - $1.99 (Stock: 100)\n",
+        "context": {
+          "action": "product_search",
+          "search_term": "PowerFlow USB-C Charging Cable",
+          "results_found": 1
+        }
+      }
+    ],
+    "user_preferences": {},
+    "past_searches": [
+      {
+        "timestamp": "2025-07-06T06:16:09.302956",
+        "search_term": "PowerFlow USB-C Charging Cable",
+        "results_count": 1
+      }
+    ],
+    "payment_requests": [],
+    "created_at": "2025-07-06T06:16:09.302946"
   }
 }
