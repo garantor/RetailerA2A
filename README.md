@@ -205,7 +205,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📸 Screenshot
 
-![Agent Conversations](agents_Conversations.png)
+![Agent Conversations](agentic_store_.png)
 
 **Built with ❤️ using A2A Framework and Web3 Technologies**
 
